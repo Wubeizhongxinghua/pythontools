@@ -3,7 +3,7 @@ import click
 
 @click.command()
 @click.option('-i','--input',help="Input count matrix")
-@click.option('-i','--input',help='Output CPM matrix')
+@click.option('-o','--output',help='Output CPM matrix')
 
 def main(input, output):
 	em = pd.read_table(input, sep="\t",header=0, index_col=0)
